@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .shopnow
+    {
+       height: 60px;
+       width: 120px;
+       background:transparent;
+       background-position: 50px 100px;
+       border: transparent;
+       margin: 120px auto;
+       line-height: 40px;
+       text-align: center;
+       color: black;
+       z-index: 0;
+       position: relative;
+       
+       
+       
+    }
+     
+
+    .shopnow::before
+       {
+         content: "Shop Now";
+         
+         height: 60px;
+         width: 120px;
+         background:transparent;
+         background-attachment: fixed;
+         position: absolute;
+         top: 0%;
+         left: -100%;
+         border: solid lightseagreen;
+         margin: -10px 120px;
+         animation: alternate-reverse;
+         
+       }
+  
+
+
+    
+    .shopnow:hover::before
+    {
+        top: 20%;  bottom: 20%;
+    }
+
+     
+
+          
+            
+    </style>
+
+
+
+</head>
+<body>
+    <div class="shopnow"><a href="Shop Now"></a></div>
+    
+
+    
+</body>
+</html>
