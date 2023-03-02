@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .main
+       {
+           height: 50px;
+           width: 70px;
+           background: rgb(10, 16, 21);
+           line-height: 50px;
+           color: #fff;
+           margin: 100px auto;  
+           text-align: center;
+           position: relative;
+           z-index: 0;
+
+           
+           overflow: hidden;
+           
+       }
+            .main::after
+        {
+          content: "";
+          height: 50px;
+          width: 70px;
+          background: rgb(51, 203, 195);
+          position: absolute;
+          top: 90%;
+          left: -100%;
+          z-index: -1;
+          transition: 2s;
+         }
+    .main:hover::after
+    {
+       left: 0%;
+
+    }
+    ::selection
+    {
+        background: plum;
+        color: #fff;
+    }
+    .jk
+    {
+        height: 50px;
+        width: 70px;
+        background: powderblue;
+        margin: 100px auto; 
+    }
+
+    </style>
+</head>
+<body>
+    <div class="main">Home
+
+    </div>
+
+</body>
+</html>
