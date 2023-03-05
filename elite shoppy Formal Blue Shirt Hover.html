@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      .s
+      {
+        height: 250px;
+        width: 200px;
+        background: lightblue;
+        z-index: 0;
+        position: relative;
+        text-align: center;
+        line-height: 450px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: lightcoral;
+        font-size: 18px;
+        box-shadow: grey;
+        overflow: hidden;
+      }
+       
+       
+        
+      
+        
+
+     
+
+      .s::after
+         {
+            content: "QUICK VIEW";
+            height:50px;
+            width: 200px;
+            background:black;
+            color: #fff;
+            text-align: center;
+            line-height:50px ;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 1s;
+           
+          
+           
+         } 
+
+       .s:hover::after
+       
+       {
+          top: 80%; 
+       }
+         
+
+
+
+       
+
+       .b
+        {
+       
+        height: 80px;
+        width: 200px;
+        background: lightblue;
+        text-align: center;
+        letter-spacing: 2px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        line-height: 70px;
+        }
+
+
+        .k
+        {
+            height: 100px;
+            width: 200px;
+            background: lightblue;
+        }
+   
+    
+
+
+
+    </style>
+
+
+
+
+
+
+
+</head>
+<body>
+   
+    <div class="s"></div>
+     <div class="b">$45.99  $69.71</div>
+     <div class="k"></div>
+    
+    
+
+   
+</body>
+</html>
