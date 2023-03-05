@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .box
+    {
+        height: 250px;
+        width: 450px;
+        background: url(bottom3.jpg);
+        background-size: 100% 100%;
+        margin: 20% auto;
+        color: white;
+        letter-spacing: 4px;
+        font-size: 27px;
+        text-align: right;
+        
+        line-height: 200px;
+        z-index: 0;
+        position: relative;
+
+
+    }
+
+    .box::before
+    {
+        content: "Upto 55%";
+        height: 150px;
+        width: 350px;
+        background: transparent;
+        border: solid white;
+        color: white;
+        letter-spacing: 4px;
+        font-size: 23px;
+        text-align: right ;
+        line-height: 190px ;
+        position: absolute;
+        font-family: cursive;
+        top: 0;
+        left: -100% ;
+        z-index: -1;
+        margin: 47px 47px;
+    }
+   .box:hover::before
+   {
+      left: 0;
+   }
+
+   .box:hover.effect
+   {
+        opacity:1;
+        margin-left: 0px;
+   }
+
+</style>
+</head>
+<body>
+    
+
+<div class="box">SALE</div>
+     
+    
+
+
+
+
+
+
+
+</body>
+</html>
