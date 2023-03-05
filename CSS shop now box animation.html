@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+
+
+.b1
+{
+    height: 49px;
+    width: 125px;
+    background: lightseagreen;
+    color: white;
+    margin: 20% auto;
+    text-align: center;
+    line-height: 45px;
+    letter-spacing: 2px;
+    font-family: cursive;
+    z-index: 0;
+    position: relative;
+    
+    
+}
+
+.b1::after 
+{
+    content: "";
+    height: 45px;
+    width: 120px;
+    background: transparent;
+    border: 3px solid lightseagreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.b1:hover::after
+{
+    transform: scale(1.2);
+}
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+    <div class="b1">Shop Now</div>
+</body>
+</html>
