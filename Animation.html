@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .a
+     {
+        height: 200px;
+        width: 200px;
+        background:lightblue;
+        margin: 50% auto;
+        border-radius: 50%;
+        position: relative;
+        z-index: 0s;
+       
+      
+      
+        
+     }
+     .a::after
+     {
+        content: "";
+        height: 200px;
+        width: 200px;
+        background:lightblue;
+        border-radius: 50%;
+        position: absolute;
+        margin: 0% 0%;
+        top: 0;
+        left: 0;
+        z-index:-1;
+        transform: scale(1);
+        transition: 1s;
+     }
+
+     .a:hover::after
+     {
+        transform: scale(1.4);
+     }
+
+     .a:hover
+     {
+        background: rgb(215, 117, 117) ;
+        transition: 1s;
+     }
+     
+   
+
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+</body>
+</html>
