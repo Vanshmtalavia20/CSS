@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css">
+    <style type="text/css">
+
+      .main
+      {
+         height: 70px;
+         width: 70px;
+         background-color: lightpink;
+         border-radius: 50%;
+         margin: 200px auto;
+         display: flex;
+         position: relative;
+         z-index: 0;
+         color: black;
+         justify-content: center;
+         line-height: 50px;
+         align-items: center;
+      }
+
+      .n1,.n2,.n3
+      {
+         height: 70px;
+         width: 70px;
+         background-color: lightpink;
+         border-radius: 50%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: -1;
+         opacity: 1;
+      }
+
+      .n1
+      {
+        animation: hii 2s linear infinite;
+      }
+
+      .n2
+      {
+        animation: hey 2s linear infinite;
+      }
+
+      .n3
+      {
+        animation: hello 2s linear infinite;
+      }
+
+      @keyframes hii
+      {
+        from{transform: scale(1);opacity: 1;}
+        to{transform: scale(1.4);opacity: 0.2;}
+      }
+
+      @keyframes hey
+      {
+        from{transform: scale(1);opacity: 1;}
+        to{transform: scale(1.8);opacity: 0.2;}
+      }
+
+
+      @keyframes hello
+      {
+        from{transform: scale(1);opacity: 1;}
+        to{transform: scale(2.2);opacity: 0.2;}
+      }
+
+      
+    </style>
+</head>
+<body>
+    <div class="main">
+        <i class="fa-solid fa-phone"></i>
+        <div class="n1"></div>
+        <div class="n2"></div>
+        <div class="n3"></div>
+    </div>
+</body>
+</html>
