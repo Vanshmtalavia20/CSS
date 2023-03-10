@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css">
+    <style>
+        .m
+        {
+            height: 70px;
+            width: 70px;
+            background-color: black;
+            text-align: center;
+            line-height: 70px;
+            margin: 150px auto;
+            font-size: 30px;
+            position: relative;
+            z-index: 0;
+        }
+
+        .n
+        {
+           height: 70px;
+           width: 70px;
+           background-color: lightgrey;
+           position: absolute;
+           top: 0;
+           left: 0;
+           animation: total 6s infinite;
+           z-index: -1;
+        }
+
+        @keyframes total
+        {
+            0%{background-color:black;}
+            10%{background-color: lightblue;}
+            20%{background-color: beige;}
+            30%{background-color: blueviolet;}
+            40%{background-color: aqua;}
+            50%{background-color: lavender;}
+            60%{background-color: thistle;}
+            70%{background-color: cadetblue;}
+            80%{background-color: crimson;}
+            90%{background-color: lemonchiffon;}
+            100%{background-color: lightgrey;}
+        }
+    </style>
+</head>
+<body>
+   <div class="m">
+    <i class="fa-solid fa-laptop"></i>
+    <div class="n"></div>
+</div> 
+
+</body>
+</html>
