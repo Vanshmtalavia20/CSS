@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .j
+        {
+            height: 800px;
+            background: radial-gradient(lightblue,lightpink);
+            margin: 10px auto;
+        }
+         .main
+            {
+              height: 150px;
+              width: 150px;
+              background-color: transparent;
+              margin: 150px auto;
+              position: relative;
+            
+            }
+
+            .l
+            {
+                height: 150px;
+                width: 150px;
+                background-color:transparent;
+                border: 10px solid transparent;
+                border-top:10px solid lightblue;
+                position: absolute;
+                top: 0;
+                left: 0;
+                animation: nothing 3s linear infinite;
+                
+            }
+
+            .b
+            {
+                height: 100px;
+                width: 100px;
+                background-color:transparent;
+                border: 10px solid transparent;
+                border-top: 10px solid lightcoral;
+                position: absolute;
+                top: 15%;
+                left: 13%;
+                padding: 5px;
+                animation: jack 4s linear infinite;
+                
+            }
+
+            .c
+            {
+                height: 50px;
+                width: 50px;
+                background-color:transparent;
+                border: 10px solid transparent;
+                border-top: 10px solid grey;
+                position: absolute;
+                top: 30%;
+                left: 33%;
+                animation: joy 5s linear infinite;
+            }
+
+
+            @keyframes nothing
+
+            {
+                from{transform: rotate(0deg);}
+                to{transform: rotate(360deg);}
+            }
+
+            
+            @keyframes jack
+
+            {
+                from{transform: rotate(360deg);}
+                to{transform: rotate(0deg);}
+            }
+
+            
+            @keyframes joy
+
+            {
+                from{transform: rotate(0deg);}
+                to{transform: rotate(360deg);}
+            }
+
+
+
+
+ 
+
+    </style>
+</head>
+<body><div class="j"> 
+    <div class="main">
+    <div class="l"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+</div>
+</div>
+</body>
+</html>
