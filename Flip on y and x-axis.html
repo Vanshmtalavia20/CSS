@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css">
+    <style>
+.main
+{
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    margin: 150px auto;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+}
+
+.front
+{
+    height: 50px;
+    width: 50px;
+    background: orange;
+    margin: 150px auto;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: -190px;
+    left: 0;
+    transform: rotateX(-90deg);
+    transition: .5s;
+    backface-visibility: hidden;
+    overflow: hidden;
+    
+}
+.front2
+{
+    height: 50px;
+    width: 50px;
+    background: orange;
+    margin: 150px auto;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: -170px;
+    left: 0;
+    transform: rotateX(90deg);
+    transition: .5s;
+    backface-visibility: hidden;
+    overflow: hidden;
+    
+}
+.back
+{
+    height: 50px;
+    width: 50px;
+    background: lightblue;
+    margin: 150px auto;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: -160px;
+    left: 0;
+    transform: rotateX(0);
+    transition: .5s;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.main:hover .front
+{
+   transform: rotate(0deg);
+}
+
+.main:hover .back
+{
+    transform: rotateX(-110deg);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="front"><i class="fa-brands fa-instagram"></i></div>
+        <div class="front2"><i class="fa-brands fa-instagram"></i></div>
+        <div class="back"><i class="fa-brands fa-instagram"></i></div>
+    </div>
+</body>
+</html>
