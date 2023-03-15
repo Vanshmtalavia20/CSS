@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .main
+        {
+            height: 550px;
+            width: 600px;
+            background-color: #000;
+            margin: 150px auto;
+            position: relative;
+        }
+
+
+        .uk
+        {
+            height: 10px;
+            width: 80px;
+            border-radius:20px;
+            background-color: white;
+            position: absolute;
+            top: 100px;
+            left: 170px;
+        }
+
+        .kk
+        {
+            height: 10px;
+            width: 80px;
+            border-radius: 20px;
+            background-color: white;
+            position: absolute;
+            top: 100px;
+            left: 360px;
+        }
+
+        .gk
+        {
+            height: 200px;
+            width: 100px;
+            border-radius: 70%;
+            background-color: rgb(15, 15, 15);
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            opacity: 1;
+            transition: 1s;
+        }
+
+        .anm1
+        {
+            height: 200px;
+            width: 100px;
+            border-radius: 70%;
+            background-color: white;
+            animation: 2s linear infinite yup;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 1;
+            transition: 1s;
+        }
+
+
+
+
+        .eye
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            background-color: rgb(172, 26, 26);
+            position: absolute;
+            top: 90px;
+            left: 45px;
+            animation: p 1s linear infinite;
+            opacity: 1;
+        }
+
+        .tk
+        {
+            height: 200px;
+            width: 100px;
+            border-radius: 70%;
+            background-color:rgb(27, 25, 25);
+            position: relative;
+            top: 150px;
+            left: 350px;
+        }
+
+       .anm2
+        {
+            height: 200px;
+            width: 100px;
+            border-radius: 70%;
+            background-color: rgb(209, 224, 229);
+            animation: 2s linear infinite pop;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .eye2
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            background-color: rgb(164, 19, 19);
+            animation: 1s linear infinite o;
+            position: absolute;
+            top: 90px;
+            left: 10px;
+            opacity: 1;
+        }
+
+
+         @keyframes yup
+        {
+            0%{top: 0; background-color:transparent;}
+           100%{bottom: 100; background-color: white;}
+        }
+
+        @keyframes pop
+        {
+            0%{top:0%; background-color:transparent;}
+           100%{bottom:100%; background-color: white;} 
+        }
+
+
+        @keyframes p
+        {
+            0%{left: 0%; background-color:black; opacity: 0;}
+           100%{right: 100%; background-color: rgb(9, 9, 9); opacity: 0.9;}
+        }
+
+        @keyframes o
+        {
+            0%{right:0%; background-color:black;opacity: 0;}
+           100%{left:50%; background-color: rgb(7, 5, 5);opacity: 0.9;} 
+        }
+
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="uk"></div>
+        <div class="kk"></div>
+        <div class="gk">
+            <div class="anm1"></div>
+            <div class="eye"></div>
+        </div>
+        <div class="tk">
+            <div class="anm2"></div>
+           <div class="eye2"></div>
+        </div>
+    </div>
+</body>
+</html>
