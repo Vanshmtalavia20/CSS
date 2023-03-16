@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+
+
+        .main
+        {
+           height: 600px;
+           width: 500px;
+           background: gray;
+           margin: 150px auto;
+           position: relative;
+        }
+
+
+        .c1
+        {
+            height: 200px;
+            width: 200px;
+            background: rgb(15, 205, 94);
+            position: relative;
+            top: 150px;
+            left: 150px;
+            transition: 1s;
+            z-index: 0;
+            overflow: hidden;
+        
+        }
+
+        .c1::before
+        {
+            content: "";
+            height: 200px;
+            width: 200px;
+            background: rgb(255, 20, 67);
+            position: absolute;
+            top: 100%;
+            left: -100%;
+            z-index: -1;
+            transition: 1s;
+        }
+
+       .c1:hover::before
+       {
+         top: 0%; left: 0%;
+       }
+
+       
+       
+
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="c1"></div>
+       
+        
+    </div>
+</body>
+</html>
