@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .main
+        {
+            height: 400px;
+            width: 400px;
+            margin: 150px auto;
+            background: transparent;
+            position: relative;
+            padding: 120px;
+        }
+
+        .k
+        {
+           height: 150px;
+           width: 150px;
+           background: rgb(163, 17, 237);
+           border-radius: 20px;
+           position:relative;
+           z-index: 0;
+           opacity: 1;
+           /* overflow: hidden; */
+           /* transition: 1s; */
+           
+        }
+
+        .k::after
+        { 
+           content: "";
+           height: 150px;
+           width: 150px;
+           border-radius: 20px;
+           opacity: 1.2;
+           background: rgb(188, 129, 217);
+           position: absolute;
+           top: 10%;
+           left: 0%;
+           z-index: -1;
+           transition: 1s;
+        }
+
+        .k:hover::after
+        {
+           left: 0%; top: 20%;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="k"></div>
+    </div>
+    </div>
+</body>
+</html>
